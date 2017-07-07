@@ -5,9 +5,11 @@
   "license": "MIT",
   "dependencies": {
     "leaflet": "^1.0.3",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "scripts": {
-    "build": "webpack app/index.js dist/bundle.js"
+    "build": "webpack app/index.js dist/bundle.js",
+    "start": "webpack-dev-server --progress --hot --port 3030 --open"
   }
 }
